@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Homemade+Apple:100,400,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,900");
+html, body {
+  font-family: "Roboto", Helvetica Neue, sans-serif;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+nav {
+  border: blue;
+  margin: 0;
+  color: #fff;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.cursive {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 100;
+}
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.tile {
+  font-family: "Homemade Apple", cursive;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  background: #1e1e1e;
+  margin: 0 auto;
+  padding: 2em 0 1em;
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  #header {
+    padding: 1em 0;
+  }
+}
+#header .header-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  height: 4em;
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  #header .header-inner {
+    max-width: 768px;
+    height: 3em;
+  }
+}
+@media only screen and (max-width : 767px) {
+  #header .header-inner {
+    height: 1em;
+    padding: 0 1em 1em;
+  }
+}
+#header .navbar {
+  border: 3px solid blue;
+  color: #fff;
+}
+#header .navbar .logo {
+  margin: 1em 0;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  top: -38px;
+  border: 1px solid purple;
+}
+@media only screen and (max-width : 767px) {
+  #header .navbar .logo {
+    margin: 0 auto;
+    position: relative;
+    width: 135px;
+    right: 0;
+    top: 0;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  #header .navbar .logo {
+    margin: 0.5em 0;
+    right: 257px;
+    top: -20px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  #header .navbar .logo img {
+    width: 135px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  #header .navbar .logo img {
+    width: 225px;
+  }
+}
+#header .navbar .menu {
+  text-align: center;
+  margin-top: 2em;
+}
+@media only screen and (max-width : 767px) {
+  #header .navbar .menu {
+    display: none;
+  }
+}
+#header .navbar .menu ul {
+  list-style-type: none;
+}
+#header .navbar .menu ul .video {
+  margin-right: 355px;
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  #header .navbar .menu ul .video {
+    margin-right: 260px;
+  }
+}
+#header .navbar .menu li {
+  display: inline;
+  padding: 0 0.35em;
+}
+@media only screen and (min-width : 1024px) {
+  #header .navbar .menu li {
+    padding: 0 0.75em;
+  }
+}
+
+#headerImage {
+  background-image: url("file:///Users/vungle/Documents/Marium/images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 900px;
+}
+
+.content {
+  height: 100%;
+  display: table;
+  overflow: auto;
+  margin: 40px 0 20px 0;
+}
+
+.headerContent {
+  text-align: center;
+  color: #fff;
+}
+
+#mobile-menu {
+  background: white;
+  height: 1.25em;
+  margin-top: -22px;
+  float: right;
+  width: 1.5625em;
+}
+@media only screen and (min-width : 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+#mobile-menu ul.mobile-menu {
+  position: absolute;
+  left: -40px;
+  top: 32px;
+  width: 100%;
+  z-index: 100000;
+  display: none;
+}
+#mobile-menu ul.mobile-menu li {
+  background: #1e1e1e;
+  border-top: 1px solid #020202;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  list-style-type: none;
+  margin: 0;
+}
+#mobile-menu ul.mobile-menu li a {
+  display: block;
+}
+
+.cta {
+  color: #1e1e1e;
+  text-decoration: none;
+  background: #fff;
+  border: 3px;
+  padding: 15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.ctaDark {
+  color: #fff;
+  text-decoration: none;
+  background: #1e1e1e;
+  padding: 15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.blackContent {
+  background-color: #1e1e1e;
+  width: 100%;
+  color: #fff;
+  padding: 7% 0 7% 0;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.leftColumn {
+  float: left;
+  width: 470px;
+}
+
+.rightColumn {
+  float: left;
+  margin-left: 20px;
+  width: 470px;
+  display: table;
+  overflow: auto;
+}
+
+footer {
+  margin: 20px 0 50px 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

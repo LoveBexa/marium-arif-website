@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+
+$mq-mobile-narrower: "only screen and (max-width : 320px)";
+$mq-mobile-wider: "only screen and (min-width : 320px)";
+
+$mq-tablet-narrower: "only screen and (max-width : 767px)";
+$mq-tablet-wider: "only screen and (min-width : 768px)";
+
+$mq-desktop-narrower: "only screen and (max-width : 1023px)";
+$mq-desktop-wider: "only screen and (min-width : 1024px)";
+
+$mq-large-desktop-narrower: "only screen and (max-width : 1379px)";
+$mq-large-desktop-wider: "only screen and (min-width : 1380px)";
+
+$mq-tablet: "only screen and (min-width : 768px) and (max-width : 1023px)";
+$mq-mobile: "only screen and (min-width : 320px) and (max-width : 480px)";
+
+$light-color : #fff;
+$background-color : #1e1e1e;
+$highlight-color : #020202;
+$hover-color : #ED3D3D;
+$font-normal:'Roboto', Helvetica Neue, sans-serif;
+
+
+html, body{
+    font-family: $font-normal;
+    margin: 0;
+    font-size: 19px;
+    font-weight: 100;
+    
+}
+
+nav {
+    border: blue;
+    margin:0;
+    color: $light-color;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.cursive {
+  font-family:'Homemade Apple', cursive; // script font
+    font-weight: 100;
+}
+
+h6 {
+text-transform: uppercase; 
+letter-spacing: 2px;
+font-size: 1rem;
+font-weight: 100;
+}
+
+.tile{
+    font-family:'Homemade Apple', cursive;
+
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+  background: $background-color;
+  margin: 0 auto;
+  padding: 2em 0 1em;
+      @media #{$mq-tablet}{
+  padding: 1em 0;
+    }
+    .header-inner {
+      max-width: 1024px;
+      margin: 0 auto;
+      position: relative;
+      height: 4em;
+    @media #{$mq-tablet}{
+      max-width: 768px;
+      height: 3em;
+    }
+    @media #{$mq-tablet-narrower}{
+      height: 1em;
+      padding: 0 1em 1em;
+   }
+  }
+.navbar {
+    border: 3px solid blue;
+    color: $light-color;
+
+  .logo {
+    margin: 1em 0;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    top: -38px;
+    border: 1px solid purple;
+    @media #{$mq-tablet-narrower}{
+      margin: 0 auto;
+      position: relative;
+      width: 135px;
+      right: 0;
+      top: 0;
+    }
+
+    @media #{$mq-tablet}{
+      margin: 0.5em 0;
+      right: 257px;
+      top: -20px;
+    }
+  img {
+    @media #{$mq-tablet-narrower}{
+      width: 135px;
+    }
+      @media #{$mq-tablet}{
+      width: 225px;
+    }
+   }
+  }
+  .menu {
+    text-align: center;
+    margin-top: 2em;
+            @media #{$mq-tablet-narrower}{
+            display:none
+         }
+  ul {
+    list-style-type:none;
+    .video {
+      margin-right: 355px;
+     @media #{$mq-tablet}{
+     margin-right: 260px;
+    }
+    }
+  }
+  li {
+    display: inline;
+    padding: 0 .35em;
+          @media #{$mq-desktop-wider}{
+          padding: 0 .75em;
+    }
+  }
+  } 
+}
+}
+
+#headerImage {
+background-image: url("file:///Users/vungle/Documents/Marium/images/header.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 900px;
+}  
+
+.content{
+  height: 100%;
+  display: table;
+  overflow: auto;
+  margin: 40px 0 20px 0
+}
+
+.headerContent {
+    text-align:center;
+    color: $light-color; 
+
+}
+
+#mobile-menu {
+    background: white;
+    height: 1.25em;
+    margin-top: -22px;
+    float: right;
+    width: 1.5625em;
+
+   @media #{$mq-tablet-wider}{
+      display: none;
+   }
+    ul.mobile-menu {
+        position: absolute;
+        left:-40px;
+        top: 32px;
+        width: 100%;
+        z-index: 100000;
+        display:none;
+
+      li {
+        background: $background-color;
+        border-top: 1px solid $highlight-color;
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        list-style-type:none;
+        margin: 0;
+        a {
+          display: block;
+        } 
+      }
+    }
+}    
+
+.cta {
+  color: $background-color;
+  text-decoration: none;
+  background: $light-color;
+  border: 3px;
+  padding:15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 200px;
+
+}
+
+
+.ctaDark {
+  color: $light-color;
+  text-decoration: none;
+  background: $background-color;
+  padding:15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+
+.blackContent{
+background-color: $background-color;
+width: 100%;
+color: $light-color;
+padding: 7% 0 7% 0;
+text-align: center;
+line-height: 2rem;
+}
+
+.leftColumn{
+  float:left;
+  width:470px;
+}
+
+.rightColumn{
+  float:left;
+  margin-left: 20px;
+  width:470px;
+  display: table;
+  overflow: auto;
+}
+
+footer {
+  margin: 20px 0 50px 0;
+  text-align: center;
+
+}
