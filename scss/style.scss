@@ -18,7 +18,7 @@ $mq-tablet: "only screen and (min-width : 768px) and (max-width : 1023px)";
 $mq-mobile: "only screen and (min-width : 320px) and (max-width : 480px)";
 
 $light-color : #fff;
-$background-color : #1e1e1e;
+$background-color : #000;
 $highlight-color : #020202;
 $hover-color : #ED3D3D;
 $font-normal:'Roboto', Helvetica Neue, sans-serif;
@@ -27,15 +27,21 @@ $font-normal:'Roboto', Helvetica Neue, sans-serif;
 html, body{
     font-family: $font-normal;
     margin: 0;
-    font-size: 19px;
-    font-weight: 100;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
     
 }
 
 nav {
-    border: blue;
     margin:0;
     color: $light-color;
+
+    a, a:link, a:active{
+      color: $light-color;
+      text-decoration: none;
+
+    }
 }
 
 h1 {
@@ -44,18 +50,20 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  
 }
 
 .cursive {
   font-family:'Homemade Apple', cursive; // script font
     font-weight: 100;
+line-height: 10px;
 }
 
 h6 {
 text-transform: uppercase; 
-letter-spacing: 2px;
-font-size: 1rem;
-font-weight: 100;
+letter-spacing: 15px;
+font-size: 0.8rem;
+font-weight: 300;
 }
 
 .tile{
@@ -90,16 +98,15 @@ font-weight: 100;
    }
   }
 .navbar {
-    border: 3px solid blue;
     color: $light-color;
 
   .logo {
     margin: 1em 0;
     position: absolute;
-    right: 50%;
+    right: 40%;
     text-align: center;
-    top: -38px;
-    border: 1px solid purple;
+    top: -80px;
+    width: 150px;
     @media #{$mq-tablet-narrower}{
       margin: 0 auto;
       position: relative;
@@ -115,10 +122,9 @@ font-weight: 100;
     }
   img {
     @media #{$mq-tablet-narrower}{
-      width: 135px;
+      width: 100px;
     }
       @media #{$mq-tablet}{
-      width: 225px;
     }
    }
   }
@@ -142,6 +148,12 @@ font-weight: 100;
     padding: 0 .35em;
           @media #{$mq-desktop-wider}{
           padding: 0 .75em;
+
+    color: $light-color;
+    text-transform: capitalize; 
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 300;
     }
   }
   } 
@@ -149,7 +161,7 @@ font-weight: 100;
 }
 
 #headerImage {
-background-image: url("file:///Users/vungle/Documents/Marium/images/header.jpg");
+background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url("../images/header.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 width: 100%;
@@ -166,7 +178,8 @@ height: 900px;
 .headerContent {
     text-align:center;
     color: $light-color; 
-
+    vertical-align: middle;
+    height: 100%;
 }
 
 #mobile-menu {
@@ -182,7 +195,7 @@ height: 900px;
     ul.mobile-menu {
         position: absolute;
         left:-40px;
-        top: 32px;
+        top: 80px;
         width: 100%;
         z-index: 100000;
         display:none;
@@ -206,13 +219,21 @@ height: 900px;
   color: $background-color;
   text-decoration: none;
   background: $light-color;
-  border: 3px;
   padding:15px 50px 15px 50px;
   border-radius: 10px;
   width: 200px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 10%;
 
 }
 
+#details {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  
+}
 
 .ctaDark {
   color: $light-color;
@@ -221,6 +242,27 @@ height: 900px;
   padding:15px 50px 15px 50px;
   border-radius: 10px;
   width: 200px;
+  margin: 10%;
+  line-height: 4rem;
+}
+
+input {
+  color: $background-color;
+  text-decoration: none;
+  background: $light-color;
+  padding:15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 400px;
+  font-size: 2em;
+}
+
+input[type=submit] {
+  color: $light-color;
+  text-decoration: none;
+  background: $background-color;
+  padding:15px 50px 15px 50px;
+  border-radius: 10px;
+  width: 250px;
 }
 
 
@@ -231,19 +273,29 @@ color: $light-color;
 padding: 7% 0 7% 0;
 text-align: center;
 line-height: 2rem;
+font-size: 1rem;
 }
 
 .leftColumn{
+  width:49%;
   float:left;
-  width:470px;
+  display:inline-block;
+
 }
 
+img { max-width: 100%;}
+
 .rightColumn{
-  float:left;
-  margin-left: 20px;
-  width:470px;
-  display: table;
-  overflow: auto;
+  float: left;
+  margin-left: 2%;
+  width: 49%;
+  display:inline-block;
+
+}
+
+#newsletter {
+  text-align:center; 
+  margin:10% 0 10% 0;
 }
 
 footer {
